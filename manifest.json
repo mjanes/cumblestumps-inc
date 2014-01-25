@@ -1,0 +1,10 @@
+{
+  "manifest_version": 1,
+
+  "name": "Notr"
+  "description": "Allows users to write nots on web pages",
+  "version": "1.0"
+  "permissions": [
+    "storage"
+  ]
+}
