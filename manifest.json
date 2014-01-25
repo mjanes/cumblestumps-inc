@@ -2,6 +2,7 @@
   "name": "Hello World!",
   "description": "My first Chrome App.",
   "version": "0.1",
+  "permissions": ["tabs", "http://*/*", "background", "storage"],
   "app": {
     "background": {
       "scripts": ["background.js"]
