@@ -4,9 +4,9 @@
 	$.getScript("../js/notr.js")
 </script>
 <html>
-  <body>
-    <textarea rows="6" cols="50">
+  <body onload = "$textarea.value = load(document.URL)">
+    <textarea id = "textarea" rows="6" cols="50">
     </textarea>
-    <button type="button">Save</button>
+    <button type="button" onclick="save(document.URL, #textarea.val)">Save</button>
   </body>
 </html>

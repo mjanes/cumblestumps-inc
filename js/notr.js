@@ -17,12 +17,10 @@
  */
 
 function load(url) {
-
-
+  return localStorage.getItem(url);
 }
 
 
 function save(url, notes) {
-
-
+  localStorage.setItem(url, notes);
 }
