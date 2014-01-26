@@ -17,13 +17,9 @@
  */
 
 
-$(document).ready(test());
+$(document).ready(getUrl());
 
 var url;
-
-function test() {
-  getUrl();
-}
 
 function getUrl() {
   chrome.tabs.query({'active' : true}, function(tabs) {
@@ -33,7 +29,7 @@ function getUrl() {
 
 function saveUrl(inUrl) {
   url = inUrl;
-  alert(url);
+  var text = localStorage.getItr
 }
 
 
