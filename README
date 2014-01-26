@@ -1,0 +1,21 @@
+Not'd
+
+Watch as Matt Janes and Tynan Burke experiment with learning Javascript and browser extensions.
+
+Initial plan:
+1) Allow users to take notes on various webpages
+
+Improvements to be done with what we've currently got:
+1) Get a custom logo instead of taking some open source thing we forgot to attribute
+2) Switch saving from local storage to Google's synced storage
+3) Have popup disappear after hitting save
+4) Save for each letter typed
+5) Have logo change color based on whether or not url has notes associated with it
+6) Better handle url parsing, to better multi-page articles, dynamic html, etc, etc.
+7) Allow searching of notes
+8) Improve UI
+
+
+
+Potential future improvements I want:
+1) Be able to show history of browsing you have done, and how you have tabbed off things, etc.
