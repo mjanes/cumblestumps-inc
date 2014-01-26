@@ -9,7 +9,7 @@ function getUrl() {
 }
 
 function storeUrl(inUrl) {
-  url = inUrl;
+  url = inUrl.split("?")[0];
   $('#notdtextarea').val(load(url));
   $('#notdbutton').click(function() {
     save(url, $('#notdtextarea').val());
