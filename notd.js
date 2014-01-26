@@ -16,6 +16,27 @@
  * hit.
  */
 
+
+$(document).ready(test());
+
+var url;
+
+function test() {
+  getUrl();
+}
+
+function getUrl() {
+  chrome.tabs.query({'active' : true}, function(tabs) {
+    saveUrl(tabs[0].url);
+  });
+}
+
+function saveUrl(inUrl) {
+  url = inUrl;
+  alert(url);
+}
+
+
 function load(url) {
   return localStorage.getItem(url);
 }
