@@ -16,6 +16,24 @@
  * hit.
  */
 
+//var notedURL = document.URL.split("?")[0];
+var notedURL = '';
+
+/*
+var isThereANote = localStorage.getItem(notedURL);
+if (!isThereANote) {isThereANote='';}
+alert(notedURL + "final");
+*/
+
+/*
+$( document ).ready(function() {
+alert('test');
+var notedURL = document.URL.split("?")[0];
+var isThereANote = localStorage.getItem(notedURL);
+if (!isThereANote) {isThereANote='';}
+//$('body').prepend('<div><form><textarea id="notesForThisURL">' + isThereANote + '</textarea></form></div><button id="saveNote">Click to save!</button>');
+});
+*/
 function load(url) {
 
 

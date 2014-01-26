@@ -5,11 +5,15 @@
   "description": "Write notes on web pages",
   "version": "1.0",
   "permissions": [
-    "storage"
+    "storage", "tabs"
   ],
   "browser_action": {
     "default_title": "Notr",
     "default_icon": "img/icon.png",
     "default_popup": "html/popup.html"
-  }
+  },
+  "content_scripts": [ {
+    "js": [ "js/jquery-1.10.2.min.js"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
 }
