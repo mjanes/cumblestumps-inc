@@ -13,9 +13,10 @@ Improvements to be done with what we've currently got:
 5) Have logo change color based on whether or not url has notes associated with it
 6) Better handle url parsing, to better multi-page articles, dynamic html, etc, etc.
 7) Allow searching of notes
-8) Improve UI
+8) Improve UI, make it look nicer, etc.
 
 
 
 Potential future improvements I want:
 1) Be able to show history of browsing you have done, and how you have tabbed off things, etc.
+2) Ability to tag notes to specific parts of a webpage?
