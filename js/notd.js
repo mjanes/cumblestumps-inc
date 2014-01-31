@@ -10,16 +10,30 @@ function getUrl() {
 
 function storeUrl(inUrl) {
   url = inUrl.split("?")[0];
-  $('#notdtextarea').val(load(url));
+  loadNoteForUrl(url);
   $('#notdbutton').click(function() {
     save(url, $('#notdtextarea').val());
   });
 }
 
-function load(url) {
-  return localStorage.getItem(url);
+function loadNoteForUrl(url) {
+  chrome.storage.sync.get(url, function (retVal) {
+    // Create property if it does not exist yet
+    if (typeof retVal[url] != 'string') {
+      retVal[url] = '';
+    }
+    $('#notdtextarea').val(retVal[url]);
+  });
 }
 
 function save(url, notes) {
-  localStorage.setItem(url, notes);
+  var pair = {};
+  pair[url] = notes;
+
+  chrome.storage.sync.set(pair, function() {
+    if (chrome.extension.lastError) {
+      alert('Ar error occurred: ' + chrome.extension.lastError.message);
+    }
+    // TODO: Close popup perhaps?  
+  });
 }
